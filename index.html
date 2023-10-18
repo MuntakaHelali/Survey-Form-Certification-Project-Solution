@@ -7,6 +7,85 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1 id="title">Video Game Survey Form</h1>
+    <p id="description">Let us know about your favorite video games!</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name <input class="m-1" type="text" id="name" name="name" required placeholder="Enter your name"></label>
+        </fieldset>
+        <fieldset>
+            <label for="email" id="email-label">Email <input class="m-1" type="email" id="email" name="email" required placeholder="Enter your Email"></label>
+        </fieldset>
+        <fieldset>
+            <label for="number" id="number-label">Age (optional) <input class="m-1" type="number" id="number" min="18" max="120" name="number" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+            Which option best describes your experience with video games?
+            <select class="m-1" name="dropdown" id="dropdown">
+                <option value="">Select an experience level</option>
+                <option value="">Level 1 (0-2 years)</option>
+                <option value="">Level 2 (3-5 years)</option>
+                <option value="">Level 3 (5-10 years)</option>
+                <option value="">Level 4 (10-20 years)</option>
+                <option value="">Level 5 (20+ years)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label class="flexCol" for="radiooSelection">What is your preferred medium for playing?
+                <div>
+                    <input class="inline" type="radio" name="radioSelection" value="1"> Console
+                </div>
+                <div>
+                    <input class="inline" type="radio" name="radioSelection" value="2"> PC
+                </div>
+                <div>
+                    <input class="inline" type="radio" name="radioSelection" value="3"> Mobile/Tablet
+                </div>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label class="flexCol" for="">Select yoru favourite games from the options below (Check all that apply)
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="1"> Pokemon
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="2"> Call of Duty
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="3"> League of Legends
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="4"> World of Warcraft
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="5"> Halo
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="6"> Assasins Creed
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="7"> Super Mario Bros
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="8"> Legend of Zelda
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="9"> Apex Legends
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="10"> Counter Strike
+                </div>
+                <div>
+                    <input class="inline" type="checkbox" name="checkboxSelection" value="11"> Other
+                </div>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="commentsOrSuggestions">Any comments or suggestions? 
+                <textarea name="commentsOrSuggestions" id="commentsOrSuggestions" cols="80" rows="5" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>
 </body>
 </html>
